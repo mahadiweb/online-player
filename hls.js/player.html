@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="js/hls.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+	<div class="headertext bg-dark p-4 row">
+		<div class="col-md-12"><h2 class="text-center text-light">M M3U8 Player</h2></div>
+	</div>
+	
+	<div class="row bg-primary p-4">
+		<div class="col-md-2"></div>
+		<div class="form col-md-8 p-4">
+			<form name="form" id="form" method="post">
+				<div class="form-group">
+				   <label for="mainurl" class="text-light">Main url</label>
+				   <input type="url" class="form-control" id="mainurl" name="mainurl" placeholder="Enter main url" required="">
+				 </div>
+				 <div class="form-group">
+				   <label for="signedurl" class="text-light">Signed url</label>
+				   <input type="text" class="form-control" id="signedurl" name="signedurl" placeholder="Enter signed url">
+				   <small id="urlHelp" class="form-text text-light">Example:Policy=...&Signature=...&Key-Pair-Id=...</small>
+				 </div>
+				 <div class="form-group">
+				  <button class="form-control" type="submit" id="submit" disabled="">Play</button>
+				 </div>
+			</form>
+		</div>
+		<div class="col-md-2"></div>
+
+		<div class="col-md-12"><hr style="height: 1px; background: white;"></div>
+
+		<div class="col-md-12 text-center">
+		<video id="video" style="width: 720px; height: 400px;" controls></video>
+		</div>
+	</div>
+ 
+ </div>
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
